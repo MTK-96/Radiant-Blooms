@@ -1,0 +1,114 @@
+$background: #F0F0E8;
+$font-size: #E5B8B4;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: $background;
+  scroll-behavior: smooth;
+}
+
+// Main Styles
+
+.main-content{
+  background: url(/img/radiant-bg.png);
+  opacity: 0.6;
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  .main-container{
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+  
+    .img-container{
+      text-align: center;
+      margin: 0;
+      margin-top: 0.85rem;
+      img{
+        width: 50%;
+      }
+    }
+
+    .form-container{
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+
+      input, textarea, button{
+        display: block;
+        margin-top: 1em;
+        padding: 1em;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        font-family: 'Julius Sans One', sans-serif;
+      }
+
+      textarea{
+        height: 10rem;
+        min-height: 10rem;
+        max-height: 10rem;
+        max-width: 100%;
+        min-width: 100%;
+      }
+
+
+      .submit{
+        background: white;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media(min-width: 768px){
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+
+    .form-container{
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media(min-width: 1000px){
+
+  .main-content{
+    background-position: center;
+
+    .main-container{
+     position: absolute;
+     top: 4rem;
+
+      .img-container{
+        img{
+          width: 20%;
+        }
+      }
+
+      .form-container{
+        width: 30%;
+
+        h1{
+          font-size: 1.2em;
+          margin-top: 0;
+        }
+
+        .submit:hover{
+          background-color: $font-size;
+        }
+      }
+    }
+  }
+}
+
+  

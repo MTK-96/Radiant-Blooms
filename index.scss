@@ -1,0 +1,123 @@
+$background: #F0F0E8;
+$font-size: #E5B8B4;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: $background;
+  scroll-behavior: smooth;
+}
+
+
+// Main Styles
+
+.main-content{
+  background-image: url(/img/radiant-bg.png);
+  opacity: 0.6;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  
+
+  .main-container{
+    position: absolute;
+    top: 7em;
+  
+
+  .img-container{
+    margin-bottom: 0;
+    img{
+      width: 100%;
+    } 
+  }
+
+  .img-text{
+    text-align: center;
+    h1{
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: 2.2em;
+      margin-bottom: 0.77rem;
+      margin-top: 0.77rem;
+      color: #424242;
+      font-weight: lighter;
+    }
+
+    a{
+      text-decoration: none;
+      font-family: 'Julius Sans One', sans-serif;
+      color: #E5B8B4;
+      font-size: 1.2em;
+      margin-left: 0.55rem;
+      transition: 0.5s;
+    }
+
+    a:hover{
+      color: #424242;
+     }
+    }
+  }
+} 
+
+@media(min-width: 768px){
+
+  .main-content{
+    background-position: right;
+
+    .main-container{
+      position: absolute;
+      top: 10rem;
+
+      .img-container{
+        text-align: center;
+        img{
+          width: 85%;
+        }
+      }
+
+      .img-text{
+        h1{
+          font-size: 2.5rem;
+        }
+
+        a{
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1000px){
+
+  .main-content{
+    background-position: center;
+
+    .main-container{
+      position: absolute;
+      top: 10.5em;
+
+      .img-container{
+        img{
+          width: 40%;
+        }
+      }
+
+      .img-text{
+
+        h1{
+          font-size: 2.4rem;
+        }
+
+        a{
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
